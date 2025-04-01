@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Here's an Inspiration to All Fellow Citizens to Vote Wisely</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="hero-section">
+        <h1 class="animated-title">Here's an Inspiration to All Fellow Citizens to Vote Wisely</h1>
+        <button class="scroll-btn" onclick="scrollToContent()">Know More!</button>
+    </div>
+
+    <div class="content-section" id="content">
+        <section class="voting-importance">
+            <h2>Your Vote Matters</h2>
+            <p>Your vote is your voice—an opportunity to shape the future of your community, your country, and even the world. Voting wisely and responsibly means taking the time to educate yourself, understanding the issues, and making choices that align with your values.</p>
+        </section>
+
+        <section class="responsible-voter">
+            <h2>How to Be a Responsible Voter</h2>
+            <div class="card-container">
+                <div class="card" data-content="research" onclick="openPopup('research')">
+                    <i class="fas fa-book-reader"></i>
+                    <h3>Research Candidates</h3>
+                    <p>Learn more about researching candidates</p>
+                </div>
+                <div class="card" data-content="laws" onclick="openPopup('laws')">
+                    <i class="fas fa-gavel"></i>
+                    <h3>Understand Voting Laws</h3>
+                    <p>Learn more about voting laws</p>
+                </div>
+                <div class="card" data-content="vote" onclick="openPopup('vote')">
+                    <i class="fas fa-vote-yea"></i>
+                    <h3>Make Your Vote Count</h3>
+                    <p>Learn more about making your vote count</p>
+                </div>
+                <div class="card" data-content="engage" onclick="openPopup('engage')">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Engage Respectfully</h3>
+                    <p>Learn more about respectful engagement</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="informed-decision">
+            <h2>Steps to Ensure an Informed Decision</h2>
+            <div class="card-container">
+                <div class="card" data-content="non-negotiables" onclick="openPopup('non-negotiables')">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Identify Your Non-Negotiables</h3>
+                    <p>Learn what matters most to you</p>
+                </div>
+                <div class="card" data-content="scrutinize" onclick="openPopup('scrutinize')">
+                    <i class="fas fa-magnifying-glass"></i>
+                    <h3>Scrutinize the Candidates</h3>
+                    <p>Look beyond the surface</p>
+                </div>
+                <div class="card" data-content="character" onclick="openPopup('character')">
+                    <i class="fas fa-user"></i>
+                    <h3>Evaluate Character</h3>
+                    <p>Assess their leadership qualities</p>
+                </div>
+                <div class="card" data-content="policies" onclick="openPopup('policies')">
+                    <i class="fas fa-balance-scale"></i>
+                    <h3>Compare Policies</h3>
+                    <p>Understand their platforms</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="avoid-misinfo">
+            <h2>Avoid Election Misinformation</h2>
+            <div class="misinfo-content">
+                <div class="misinfo-section">
+                    <h3>Seek Reliable Resources</h3>
+                    <p>Fact-checking is important to identify facts from misinformation. It is advisable to check in multiple articles or websites about the topic to further check if the information is credible.</p>
+                </div>
+                
+                <div class="misinfo-section">
+                    <h3>Educate Yourself</h3>
+                    <p>Make sure to learn more about the candidate and their platforms from reliable sources. Take time to check if their platforms will be significant in the community. We must also be aware of our biases because it might affect our perception.</p>
+                </div>
+
+                <div class="misinfo-section">
+                    <h3>Verify Information</h3>
+                    <p>These are the websites you can Factcheck and Verify Information:</p>
+                    <ul class="fact-check-links">
+                        <li><a href="https://factcheck.org" target="_blank">FactCheck.org</a></li>
+                        <li><a href="https://apnews.com/fact-check" target="_blank">The Associated Press (AP) Fact Check</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        
+    </div>
+
+    <!-- Popup overlays -->
+    <div class="popup-overlay" id="researchPopup">
+        <div class="popup-content">
+            <div class="popup-header">
+                <h2>Research Candidates</h2>
+                <button class="popup-close" onclick="closePopup('research')">&times;</button>
+            </div>
+            <div class="popup-body">
+                <p>Learn about the candidates' positions, policies, and track records. Understand where they stand on issues that matter most to you and your community.</p>
+                <h3>Tips for Researching Candidates:</h3>
+                <ul>
+                    <li>Review their official campaign websites</li>
+                    <li>Check their voting records and past positions</li>
+                    <li>Look for third-party fact-checking sources</li>
+                    <li>Attend candidate forums and debates</li>
+                    <li>Research their financial disclosures</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-overlay" id="lawsPopup">
+        <div class="popup-content">
+            <div class="popup-header">
+                <h2>Understand Voting Laws</h2>
+                <button class="popup-close" onclick="closePopup('laws')">&times;</button>
+            </div>
+            <div class="popup-body">
+                <p>Know your rights and familiarize yourself with voting regulations in your area.</p>
+                <h3>Important Voting Laws to Know:</h3>
+                <ul>
+                    <li>Voter ID requirements</li>
+                    <li>Registration deadlines</li>
+                    <li>Early voting options</li>
+                    <li>Absentee voting rules</li>
+                    <li>Provisional ballot procedures</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-overlay" id="votePopup">
+        <div class="popup-content">
+            <div class="popup-header">
+                <h2>Make Your Vote Count</h2>
+                <button class="popup-close" onclick="closePopup('vote')">&times;</button>
+            </div>
+            <div class="popup-body">
+                <p>Vote with your values and consider the issues, policies, and character of the candidates.</p>
+                <h3>How to Make Your Vote Count:</h3>
+                <ul>
+                    <li>Vote based on issues that matter to you</li>
+                    <li>Consider the candidate's track record</li>
+                    <li>Look at their policy proposals</li>
+                    <li>Consider their leadership qualities</li>
+                    <li>Think about their vision for the future</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-overlay" id="engagePopup">
+        <div class="popup-content">
+            <div class="popup-header">
+                <h2>Engage Respectfully</h2>
+                <button class="popup-close" onclick="closePopup('engage')">&times;</button>
+            </div>
+            <div class="popup-body">
+                <p>Democracy thrives on dialogue. Engage with others respectfully, even when you disagree.</p>
+                <h3>Principles of Respectful Engagement:</h3>
+                <ul>
+                    <li>Listen actively to others</li>
+                    <li>Stay open to different perspectives</li>
+                    <li>Respectfully challenge misinformation</li>
+                    <li>Focus on issues, not personalities</li>
+                    <li>Seek common ground</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-overlay" id="non-negotiablesPopup">
+        <div class="popup-content">
+            <div class="popup-header">
+                <h2>Identify Your Non-Negotiables</h2>
+                <button class="popup-close" onclick="closePopup('non-negotiables')">&times;</button>
+            </div>
+            <div class="popup-body">
+                <p>Establish clear deal-breakers that would prevent you from supporting a candidate:</p>
+                <ul>
+                    <li>History of human rights violations</li>
+                    <li>Corruption charges or involvement in scandals</li>
+                    <li>Dishonesty or lack of transparency</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-overlay" id="scrutinizePopup">
+        <div class="popup-content">
+            <div class="popup-header">
+                <h2>Scrutinize the Candidates</h2>
+                <button class="popup-close" onclick="closePopup('scrutinize')">&times;</button>
+            </div>
+            <div class="popup-body">
+                <p>Evaluate candidates based on their actions:</p>
+                <ul>
+                    <li>Track Record: What have they actually accomplished in office or their profession?</li>
+                    <li>Consistency: Have they been true to their principles, or do they change stances for political gain?</li>
+                    <li>Leadership Style: Are they accountable, open to dialogue, and solution-oriented?</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-overlay" id="characterPopup">
+        <div class="popup-content">
+            <div class="popup-header">
+                <h2>Evaluate Character & Public Service</h2>
+                <button class="popup-close" onclick="closePopup('character')">&times;</button>
+            </div>
+            <div class="popup-body">
+                <ul>
+                    <li>How do they treat their opponents, critics, and the public?</li>
+                    <li>Do they unite or divide people?</li>
+                    <li>Have they demonstrated true public service, or are they driven by self-interest?</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-overlay" id="policiesPopup">
+        <div class="popup-content">
+            <div class="popup-header">
+                <h2>Research Policies & Compare Platforms</h2>
+                <button class="popup-close" onclick="closePopup('policies')">&times;</button>
+            </div>
+            <div class="popup-body">
+                <ul>
+                    <li>Read their official platforms and past speeches</li>
+                    <li>Compare their stances on key issues with other candidates</li>
+                    <li>Consider how their policies align with your values and the country's needs</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
